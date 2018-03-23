@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 
 import "./index.css";
 
-//function(gets optional data) {return a peice of UI} << React in a Nutshell, also component
+//function || class(gets optional data) {return a peice of UI} << React in a Nutshell, also component
 
 function Root(props) {
     const posts = [
@@ -35,7 +35,7 @@ function Root(props) {
         </h1>
         <p>indent better</p>
         {posts.map((post) => {
-    return <ListItem key={post.id} title={post.title} body={post.body} />;
+    return <Post key={post.id} title={post.title} body={post.body} />;
         })}
         </div>
     );
@@ -49,6 +49,29 @@ function ListItem(props) {
         </div>
 
     );
+}
+
+class Post extends React.Component {
+    state = {
+        showBody: false
+    }
+    render() {
+        ///runs when componentloads and on state change
+        return (
+            <div className="list-item">
+            <h1>{this.props.title}</h1>
+            <button onClick={this.toggleBody}>Show Body</button>
+            { this.state.showBody === true ? (<div>{this.props.body}</div>) : null }
+            </div>
+
+        );
+    }
+
+    toggleBody = () => {
+        this.setState((prevState) => {
+            return {showBody: !prevState.showBody}
+        });
+    };
 }
 
 ReactDOM.render(<Root name = "BOZO" cohort="cs6" />, document.getElementById('app'))
