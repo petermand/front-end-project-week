@@ -1,0 +1,32 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+
+PATH: 
+  C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\dpeterman\bin;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files\nodejs;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Program Files\MySQL\MySQL Utilities 1.6;C:\Users\dpeterman\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\dpeterman\AppData\Local\Yarn\bin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  6.11.3
+
+Platform: 
+  win32 x64
+
+npm manifest: 
+  No manifest
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  Error: Couldn't find a package.json file in "C:\\Users\\dpeterman\\lambda\\front-end-project-week"
+      at MessageError.Error (native)
+      at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:40048:15
+      at next (native)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:98:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:109:13
